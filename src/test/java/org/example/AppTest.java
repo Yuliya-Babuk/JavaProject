@@ -2,15 +2,20 @@ package org.example;
 
 import org.junit.Test;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-import static org.junit.Assert.assertEquals;
-
 public class AppTest {
+
     @Test
-    public void dateTest() {
-        assertEquals(LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE), "2021-09-03");
+    public void addContactNameTest() {
+        AddcontactnameTest addcontactnameTest = new AddcontactnameTest();
+        addcontactnameTest.setUp();
+        addcontactnameTest.addcontactname();
+    }
+
+    @Test
+    public void createProjectTest() {
+        CreateprojectTest createprojectTest = new CreateprojectTest();
+        createprojectTest.setUp();
+        createprojectTest.createproject();
     }
 }
 
